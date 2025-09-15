@@ -10,9 +10,9 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ title, description, image, websiteUrl, videoUrl }: ProjectCardProps) => {
   return (
-    <div className="card-gradient border border-border rounded-lg overflow-hidden card-shadow smooth-transition hover:scale-105">
+    <div className="card-gradient border border-border rounded-lg overflow-hidden card-shadow smooth-transition hover:scale-105 flex flex-col md:flex-row">
       {image && (
-        <div className="aspect-video overflow-hidden">
+        <div className="md:w-80 md:flex-shrink-0 aspect-video md:aspect-square overflow-hidden">
           <img 
             src={image} 
             alt={title}
@@ -20,10 +20,12 @@ export const ProjectCard = ({ title, description, image, websiteUrl, videoUrl }:
           />
         </div>
       )}
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-foreground mb-3">{title}</h3>
-        <p className="text-muted-foreground mb-4 leading-relaxed">{description}</p>
-        <div className="flex gap-3">
+      <div className="p-6 flex-1 flex flex-col justify-between">
+        <div>
+          <h3 className="text-xl font-bold text-foreground mb-3">{title}</h3>
+          <p className="text-muted-foreground mb-4 leading-relaxed line-clamp-4">{description}</p>
+        </div>
+        <div className="flex gap-3 mt-auto">
           {websiteUrl && (
             <a 
               href={websiteUrl}

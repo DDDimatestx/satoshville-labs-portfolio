@@ -15,6 +15,7 @@ import meddecImage from '@/assets/meddec.png';
 import kaleImage from '@/assets/kale.png';
 import tipJarHero from '@/assets/tip-jar-hero.jpg';
 import testingSafePost from '@/assets/testing_safe_post.png';
+import domafracImage from '@/assets/domafrac.jpeg';
 
 const Index = () => {
   return (
@@ -97,7 +98,7 @@ const Index = () => {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">Our Portfolio</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="space-y-8">
             
             <ProjectCard
               title="CryptoSprunks (Music game)"
@@ -109,54 +110,55 @@ const Index = () => {
 
             <ProjectCard
               title="Domain Fractionalization App (Doma Protocol)"
-              description="Doma Fraction Tracker is a beautiful, professional-grade dashboard for tracking domain fractionalization on the Doma Protocol. Built with React, featuring real-time blockchain integration and a sleek financial dashboard UI."
+              description="Doma Fraction Tracker is a professional dashboard for tracking domain fractionalization on the Doma Protocol. Built with React, featuring real-time blockchain integration and sleek financial dashboard UI."
+              image={domafracImage}
               websiteUrl="https://satoshville.xyz/dorahacks/domapool/"
               videoUrl="https://youtu.be/EH_-bNxRC8U?si=8gp4xPaNOJF_bWjz"
             />
 
             <ProjectCard
-              title="DomainFluent.ai: Instantly Generate Marketing Copy for Your Web3 Domains with AI"
-              description="Tired of staring at a blank page, trying to write a compelling description for your domain? DomainFluent.ai solves that. It's a simple yet powerful tool that uses the Google Gemini AI to instantly generate professional marketing copy, SEO meta tags, and catchy headlines for any domain name."
+              title="DomainFluent.ai: Marketing Copy Generator for Web3 Domains"
+              description="AI-powered tool using Google Gemini to generate professional marketing copy, SEO meta tags, and catchy headlines for domain names. Simple yet powerful solution for compelling domain descriptions."
               image={domaflImage}
               websiteUrl="https://satoshville.xyz/dorahacks/doma/"
               videoUrl="https://youtu.be/bG6r-vkHrAs?si=pzB_-1L9T8smfHfT"
             />
 
             <ProjectCard
-              title="MedJournal: Blockchain-Secured Medical Records with AI Analysis"
-              description="Decentralized application (dApp) that finally solves the problem of medical record tampering and gives patients complete control over their health data. This isn't just a wellness journal. It's a system for verified medical documentation that everyone needs, especially if you've ever struggled with the chaos of traditional healthcare systems."
+              title="MedJournal: Blockchain-Secured Medical Records with AI"
+              description="Decentralized application solving medical record tampering while giving patients complete control over health data. A verified medical documentation system for modern healthcare challenges."
               image={medjImage}
               websiteUrl="https://satoshville.xyz/dorahacks/medjournal/"
               videoUrl="https://youtu.be/8k-5gzQRsU4?si=WI0ZsxWZ2MdzQzGz"
             />
 
             <ProjectCard
-              title="MedDecode. Doctor to English Translator"
-              description="MedDecode is an innovative web application that transforms complex medical documents into easily understandable explanations using artificial intelligence. The platform serves as a bridge between medical professionals and patients by converting technical medical reports, lab results, and diagnostic documents into plain language that anyone can comprehend. Democratize Medical Information: Make medical documents accessible to patients regardless of their medical knowledge background. Improve Patient Understanding: Help patients better comprehend their health conditions, treatment plans, and medical test results. Reduce Healthcare Communication Gaps: Bridge the knowledge gap between medical professionals and patients. Enhance Health Literacy: Empower patients with clear, understandable health information. Support Informed Decision Making: Enable patients to make better healthcare decisions with proper understanding"
+              title="MedDecode: Medical Document AI Translator"
+              description="AI-powered web application transforming complex medical documents into plain language. Bridges communication gaps between medical professionals and patients, democratizing medical information for better healthcare decisions."
               image={meddecImage}
               websiteUrl="https://satoshville.xyz/dorahacks/meddecode/"
               videoUrl="https://youtu.be/PYeiRtXGXto?si=geizgISG68txOTrs"
             />
 
             <ProjectCard
-              title="KALE Price Tracker Presentation"
-              description="KALE Price Tracker is a Python-based application that fetches real-time KALE token prices using the Stellar Testnet Horizon API, integrated with the Reflector oracle. It leverages the official KALE issuing key to query trades. The project features console output, price logging to a file, and a visual price trend graph using matplotlib. For reliable demos, it includes fallbacks to CSV and hard-coded data when Testnet trades are unavailable. This is a minimal viable product (MVP) designed for the Stellar Hacks: KALE x Reflector hackathon, extensible for DeFi applications."
+              title="KALE Price Tracker for Stellar Blockchain"
+              description="Python-based application fetching real-time KALE token prices via Stellar Testnet Horizon API with Reflector oracle integration. Features price logging, trend visualization, and robust fallback systems for reliable DeFi demonstrations."
               image={kaleImage}
               websiteUrl="https://github.com/DDDimatestx/kale-price-tracker"
               videoUrl="https://youtu.be/i4poc8LneAo?si=Yx6hM7ydkZgTtlsD"
             />
 
             <ProjectCard
-              title="Sonic Tip Jar - One-Click Crypto Tipping on Sonic Blockchain"
-              description="A decentralized, one-click tipping platform built to drive adoption and utility on the Sonic blockchain. This project demonstrates the practical utility of the Sonic blockchain for micro-transactions and creator monetization. By leveraging Sonic's high speed and low fees, we've built a seamless Web3 experience that empowers creators and introduces new users to the ecosystem."
+              title="Sonic Tip Jar: One-Click Crypto Tipping Platform"
+              description="Decentralized tipping platform driving Sonic blockchain adoption. Demonstrates practical utility for micro-transactions and creator monetization through high-speed, low-fee Web3 experience."
               image={tipJarHero}
               websiteUrl="https://sonic-tip-easy-production.up.railway.app/"
               videoUrl="https://youtu.be/Hxxqsha1JDw?si=eAZX0MfOgHzhnD7j"
             />
 
             <ProjectCard
-              title="ZetaChain X Google Cloud AI Buildathon"
-              description="SocialFi Content Shield is an AI-powered moderation tool for decentralized social platforms. It automatically detects toxic content (hate speech, scams) using Google Gemini AI and enforces cross-chain penalties via ZetaChain's omnichain contracts (e.g., slashing reputation tokens on Ethereum for violations on Bitcoin). Unlike centralized solutions, it operates transparently on-chain while preserving user privacy."
+              title="SocialFi Content Shield: AI-Powered Content Moderation"
+              description="AI-powered moderation tool for decentralized platforms detecting toxic content via Google Gemini AI. Enforces cross-chain penalties through ZetaChain's omnichain contracts while maintaining transparency and user privacy."
               image={testingSafePost}
               websiteUrl="https://socialfi-content-shield-production.up.railway.app/"
               videoUrl="https://youtu.be/rc7KHR7YA3g?si=haT0iRgMSEWM-OW-"

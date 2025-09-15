@@ -14,7 +14,7 @@ export const TeamMember = ({ name, role, image, linkedinUrl }: TeamMemberProps) 
         <img 
           src={image} 
           alt={name}
-          className="w-16 h-16 rounded-full object-cover border-2 border-primary"
+          className="w-20 h-20 rounded-full object-cover border-2 border-primary"
         />
       </div>
       <div className="flex-1">
