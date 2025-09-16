@@ -177,14 +177,27 @@ const Index = () => {
           <p className="text-muted-foreground mb-4">
             Building the future of Web3, one innovation at a time.
           </p>
-          <div className="flex items-center justify-center gap-2">
-            <Mail className="text-primary" />
-            <a 
-              href="mailto:satoshville@gmail.com" 
-              className="text-primary hover:text-primary-glow smooth-transition"
-            >
-              satoshville@gmail.com
-            </a>
+          <div className="flex flex-col items-center gap-4">
+            <div className="flex items-center justify-center gap-2">
+              <Mail className="text-primary" />
+              <a 
+                href="mailto:satoshville@gmail.com" 
+                className="text-primary hover:text-primary-glow smooth-transition"
+              >
+                satoshville@gmail.com
+              </a>
+            </div>
+            <div className="text-muted-foreground">
+              Visit our portal: 
+              <a 
+                href="https://satoshville.xyz/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary-glow smooth-transition ml-2"
+              >
+                satoshville.xyz
+              </a>
+            </div>
           </div>
         </div>
       </footer>
